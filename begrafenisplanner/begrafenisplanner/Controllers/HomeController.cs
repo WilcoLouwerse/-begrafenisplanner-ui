@@ -17,18 +17,19 @@ namespace begrafenisplanner.Controllers
             client1.Timeout = -1;
             var request1 = new RestRequest(Method.POST);
             request1.AddHeader("Authorization", "45c1a4b6-59d3-4a6e-86bf-88a872f35845");
-            request1.AddHeader("API-Version", "");
-            request1.AddHeader("X-NLX-Logrecord-ID", "");
-            request1.AddHeader("X-NLX-Request-Process-Id", "");
-            request1.AddHeader("X-NLX-Request-Data-Elements", "");
-            request1.AddHeader("X-NLX-Request-Data-Subject", "");
-            request1.AddHeader("X-NLX-Audit-Clarification", "");
+            // request1.AddHeader("API-Version", "V.0.1");
+            // request1.AddHeader("X-NLX-Logrecord-ID", "");
+            // request1.AddHeader("X-NLX-Request-Process-Id", "");
+            // request1.AddHeader("X-NLX-Request-Data-Elements", "");
+            // request1.AddHeader("X-NLX-Request-Data-Subject", "");
+            // request1.AddHeader("X-NLX-Audit-Clarification", "");
             request1.AddHeader("Content-Type", "application/json");
-            request1.AddParameter("application/json", "{\n    \"dateCreated\": \"20200101\",\n    \"dateModified\": \"20200101\",\n    \"name\": \"Enkel monument\",\n    \"description\": \"gemaakt van marmer\"}", ParameterType.RequestBody);
+            request1.AddParameter("application/json", "{\n\t\"dateCreated\": \"20200101\",\n\t\"dateModified\": \"20200101\",\n\t\"name\": \"Enkel monument\",\n\t\"description\": \"gemaakt van marmer\"\n}", ParameterType.RequestBody);
             IRestResponse response1 = client1.Execute(request1);
             Debug.WriteLine("\n"+response1.Content+"\n");
 
             //request.AddParameter("application/json", "{\n\t\"name\": \"My Offer\",\n\t\"product\":\"/products/{{product}}\",\n\t\"price\": \"50.00\",\n\t\"taxPercentage\": 9,\n\t\"priceCurrency\": \"EUR\",\n\t\"offeredBy\": \"http://example.org/orgs/org1\",\n\t\"availabilityEnds\":\"20191231\",\n\t\"availabilityStarts\":\"20190101\",\n\t\"eligibleCustomerTypes\": [\"/customer_types/{{customerType}}\"]\n}",
+            //request.AddParameter("application/json", "{\n\t\"name\": \"My Group\",\n    \"sourceOrganization\": \"002851234\",\n    \"catalogue\": \"/catalogues/\"\n}",  ParameterType.RequestBody);
 
             // var client = new RestClient("http://localhost:31500/graves");
             // client.Timeout = -1;
@@ -53,51 +54,16 @@ namespace begrafenisplanner.Controllers
             client.Timeout = -1;
             var request = new RestRequest(Method.GET);
             request.AddHeader("Authorization", "45c1a4b6-59d3-4a6e-86bf-88a872f35845");
-            request.AddHeader("API-Version", "");
-            request.AddHeader("X-NLX-Logrecord-ID", "");
-            request.AddHeader("X-NLX-Request-Process-Id", "");
-            request.AddHeader("X-NLX-Request-Data-Elements", "");
-            request.AddHeader("X-NLX-Request-Data-Subject", "");
-            request.AddHeader("X-NLX-Audit-Clarification", "");
+            // request.AddHeader("API-Version", "");
+            // request.AddHeader("X-NLX-Logrecord-ID", "");
+            // request.AddHeader("X-NLX-Request-Process-Id", "");
+            // request.AddHeader("X-NLX-Request-Data-Elements", "");
+            // request.AddHeader("X-NLX-Request-Data-Subject", "");
+            // request.AddHeader("X-NLX-Audit-Clarification", "");
             request.AddHeader("Link", "");
             IRestResponse response = client.Execute(request);
             Debug.WriteLine("\n"+response.Content+"\n");
 
-            // var apiURL = "http://test.htasoftware.eu/acm/api/";
-            // var ApiUesrName = "ACMAPI";
-            // var ApiPassword = "Narrowcast";
-            // var loginRequest = new LoginRequest() { Username = ApiUesrName, Password = ApiPassword };
-            // AirwayBillResponse airwayBillResponse = null;
-            // string airwayBillResponseString = null;
-            // var buffer = System.Text.Encoding.UTF8.GetBytes(JsonConvert.SerializeObject(loginRequest));
-            // var byteContent = new ByteArrayContent(buffer);
-            // byteContent.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-            //
-            // using (var client = new HttpClient())
-            // {
-            //     HttpResponseMessage response = await client.PostAsync($"{apiURL}APILogin", byteContent);
-            //     if (response.IsSuccessStatusCode)
-            //     {
-            //         string content = await response.Content.ReadAsAsync<string>();
-            //
-            //         var bearerToken = $"Bearer {content}";
-            //         client.DefaultRequestHeaders.Add("Authorization", bearerToken);
-            //
-            //         var response2 = await client.GetAsync($"{apiURL}AirwayBillStockAPI/{token.airwayBillToken}");
-            //         if (response2.IsSuccessStatusCode)
-            //         {
-            //             airwayBillResponse = await response2.Content.ReadAsAsync<AirwayBillResponse>();
-            //         }
-            //
-            //         airwayBillResponseString = (new JavaScriptSerializer()).Serialize(airwayBillResponse);
-            //         Debug.WriteLine(airwayBillResponseString);
-            //         Debug.WriteLine(" Press any key---------------------/////////////////////////////////////");
-            //
-            //
-            //     }
-            //
-            // }
-            // ViewBag.AirwayBillResponse = airwayBillResponse;
             return View();
         }
 
