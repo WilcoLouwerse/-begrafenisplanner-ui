@@ -1,8 +1,11 @@
 ﻿
+@using System.Data
+@using System.Diagnostics
 @using begrafenisplanner.Models;
 
 @{
     ViewData["Title"] = "Graves";
+    DataTable dt_graves = ViewBag.Graves;
 }
 
 <div align="right"><a href="@Url.Action("WriteGrave", "Home")" class="btn btn-primary">Add Grave</a></div>
@@ -12,7 +15,6 @@
     <thead>
         <tr>
             <th scope="col">Grave ID</th>
-            <th scope="col">Grave Covers</th>
             <th scope="col">Grave Reference</th>
             <th scope="col">Cemetery</th>
             <th scope="col">Location</th>
@@ -25,20 +27,33 @@
             <th scope="col">Date Modified</th>
         </tr>
     </thead>
+
     <tbody>
-        <tr>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-        </tr>
+    @{
+        try
+        {
+            foreach (DataRow row in dt_graves.Rows)
+            {
+            <tr>
+                <td>@row["id"].ToString()</td>
+                <td>@row["graveReference"].ToString()</td>
+                <td>@row["cemetery"].ToString()</td>
+                <td>@row["location"].ToString()</td>
+                <td>@row["position"].ToString()</td>
+                <td>@row["graveType"].ToString()</td>
+                <td>@row["status"].ToString()</td>
+                <td>@row["acquisition"].ToString()</td>
+                <td>@row["description"].ToString()</td>
+                <td>@row["dateCreated"].ToString()</td>
+                <td>@row["dateModified"].ToString()</td>
+            </tr>
+            }
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.WriteLine("\nFAILED BUILDING GRAVE COVER TABLE WITH ERROR:\n" + e + "\n");
+            throw;
+        }
+    }
     </tbody>
 </table>

@@ -1,8 +1,11 @@
 ﻿
+@using System.Data
+@using System.Diagnostics
 @using begrafenisplanner.Models;
 
 @{
     ViewData["Title"] = "Grave Covers";
+    DataTable dt_graveCovers = ViewBag.GraveCovers;
 }
 
 <div align="right"><a href="@Url.Action("WriteGraveCover", "Home")" class="btn btn-primary">Add Grave Cover</a></div>
@@ -12,21 +15,33 @@
     <thead>
         <tr>
             <th scope="col">Grave Cover ID</th>
-            <th scope="col">Graves</th>
             <th scope="col">Name</th>
             <th scope="col">Description</th>
             <th scope="col">Date Created</th>
             <th scope="col">Date Modified</th>
         </tr>
     </thead>
+
     <tbody>
-        <tr>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-            <td>x</td>
-        </tr>
+    @{
+        try
+        {
+            foreach (DataRow row in dt_graveCovers.Rows)
+            {
+            <tr>
+                <td>@row["id"].ToString()</td>
+                <td>@row["name"].ToString()</td>
+                <td>@row["description"].ToString()</td>
+                <td>@row["dateCreated"].ToString()</td>
+                <td>@row["dateModified"].ToString()</td>
+            </tr>
+            }
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.WriteLine("\nFAILED BUILDING GRAVE COVER TABLE WITH ERROR:\n" + e + "\n");
+            throw;
+        }
+    }
     </tbody>
 </table>

@@ -28,7 +28,6 @@ K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisp
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\bin\Debug\netcoreapp3.1\begrafenisplanner.Views.dll
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\bin\Debug\netcoreapp3.1\begrafenisplanner.Views.pdb
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\bin\Debug\netcoreapp3.1\RestSharp.dll
-K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.MvcApplicationPartsAssemblyInfo.cache
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.Views.pdb
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.csproj.CopyComplete
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.dll
@@ -38,3 +37,5 @@ K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisp
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\ReadGraveCover.cshtml.g.cs
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\WriteGrave.cshtml.g.cs
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\WriteGraveCover.cshtml.g.cs
+K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.MvcApplicationPartsAssemblyInfo.cache

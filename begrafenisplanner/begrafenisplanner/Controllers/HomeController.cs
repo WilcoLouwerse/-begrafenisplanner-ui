@@ -1,9 +1,12 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Diagnostics;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using begrafenisplanner.Models;
 using RestSharp;
+using Newtonsoft.Json;
 
 namespace begrafenisplanner.Controllers
 {
@@ -22,7 +25,10 @@ namespace begrafenisplanner.Controllers
             var request = new RestRequest(Method.GET);
             request.AddHeader("Authorization", "45c1a4b6-59d3-4a6e-86bf-88a872f35845");
             IRestResponse response = client.Execute(request);
-            
+
+            DataTable dt = (DataTable)JsonConvert.DeserializeObject(response.Content, (typeof(DataTable)));
+            ViewBag.Graves = dt;
+
             Debug.WriteLine("\nGraves GET Response:\n"+response.Content+"\n");
 
             return View();
@@ -40,7 +46,10 @@ namespace begrafenisplanner.Controllers
             var request = new RestRequest(Method.GET);
             request.AddHeader("Authorization", "45c1a4b6-59d3-4a6e-86bf-88a872f35845");
             IRestResponse response = client.Execute(request);
-            
+
+            DataTable dt = (DataTable)JsonConvert.DeserializeObject(response.Content, (typeof(DataTable)));
+            ViewBag.GraveCovers = dt;
+
             Debug.WriteLine("\nGrave Covers GET Response:\n" + response.Content + "\n");
 
             return View();
@@ -79,7 +88,7 @@ namespace begrafenisplanner.Controllers
                                                             + "\",\"graveType\": \"" + grave.graveType
                                                             + "\",\"status\": \"" + grave.status
                                                             + "\",\"location\": \"" + grave.location
-                                                            + "\",\"position\": " + grave.position + "\"}", ParameterType.RequestBody);
+                                                            + "\",\"position\": " + grave.position + "}", ParameterType.RequestBody);
             IRestResponse response = client.Execute(request);
             
             Debug.WriteLine("\nGraves POST Response:\n" + response.Content + "\n");
