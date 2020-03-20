@@ -57,7 +57,7 @@ namespace begrafenisplanner.Controllers
             grave.reference = Request.Form["Reference"];
             grave.cemetery = Request.Form["Cemetery"];
             grave.location = Request.Form["Location"];
-            grave.position = Request.Form["Position"];
+            grave.position = int.Parse(Request.Form["Position"]);
             grave.graveType = Request.Form["GraveType"];
             grave.status = Request.Form["Status"];
             grave.acquisition = Request.Form["Acquisition"];
@@ -65,15 +65,24 @@ namespace begrafenisplanner.Controllers
             grave.dateCreated = DateTime.Today;
             grave.dateModified = DateTime.Today;
 
-            // var client = new RestClient(apiConnector.grcApiUrl + "graves");
-            // client.Timeout = -1;
-            // var request = new RestRequest(Method.POST);
-            // request.AddHeader("Authorization", "45c1a4b6-59d3-4a6e-86bf-88a872f35845");
-            // request.AddHeader("Content-Type", "application/json");
-            // request.AddParameter("application/json", "{\n\t\"dateCreated\": \"2020-03-19 14:16:31\",\n\t\"dateModified\": \"2020-03-19 14:16:31\",\n\t\"description\": \"Test Graf\",\n\t\"cemetery\": \"url cemetery\",\n\t\"acquisition\": \"url acquisition\",\n\t\"graveReference\": \"zb-03\",\n\t\"graveType\": \"url grave type\",\n\t\"status\": \"in use\",\n\t\"location\": \"url location\",\n\t\"position\": 1,\n\t\"graveCoverId\": \"45c1a4b6-59d3-4a6e-86bf-88a872f35843\"}", ParameterType.RequestBody);
-            // IRestResponse response = client.Execute(request);
+            var client = new RestClient(apiConnector.grcApiUrl + "graves");
+            client.Timeout = -1;
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("Authorization", "45c1a4b6-59d3-4a6e-86bf-88a872f35845");
+            request.AddHeader("Content-Type", "application/json");
+            request.AddParameter("application/json", "{\"dateCreated\": \"" + grave.dateCreated 
+                                                            + "\",\"dateModified\": \"" + grave.dateModified 
+                                                            + "\",\"description\": \"" + grave.description
+                                                            + "\",\"cemetery\": \"" + grave.cemetery
+                                                            + "\",\"acquisition\": \"" + grave.acquisition
+                                                            + "\",\"graveReference\": \"" + grave.reference
+                                                            + "\",\"graveType\": \"" + grave.graveType
+                                                            + "\",\"status\": \"" + grave.status
+                                                            + "\",\"location\": \"" + grave.location
+                                                            + "\",\"position\": " + grave.position + "\"}", ParameterType.RequestBody);
+            IRestResponse response = client.Execute(request);
             
-            // Debug.WriteLine("\nGraves POST Response:\n" + response.Content + "\n");
+            Debug.WriteLine("\nGraves POST Response:\n" + response.Content + "\n");
 
             return RedirectToAction("WriteGrave");
         }
