@@ -1,0 +1,27 @@
+﻿
+@using begrafenisplanner.Models;
+
+@{
+    ViewData["Title"] = "Grave";
+}
+
+<div align="left"><a href="@Url.Action("ReadGrave", "Home")" class="btn btn-primary">Back</a></div>
+<br/>
+
+<h5>Add Grave :</h5>
+
+<form asp-action="WriteGraveButton">
+    <label>Reference: </label>
+    <input type="text"
+           id="Reference" name="Reference"
+           value="Reference Here" />
+    <br/>
+
+    <label>Cemetery: </label>
+    <input type="text"
+           id="Cemetery" name="Cemetery"
+           value="Cemetery Here" />
+    <br/>
+
+    <input type="submit" />
+</form>

@@ -13,7 +13,6 @@ K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisp
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.TagHelpers.output.cache
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.RazorCoreGenerate.cache
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\Response.cshtml.g.cs
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
@@ -35,3 +34,7 @@ K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisp
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.dll
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\begrafenisplanner.pdb
 K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_CookieConsentPartial.cshtml.g.cs
+K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\ReadGrave.cshtml.g.cs
+K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\ReadGraveCover.cshtml.g.cs
+K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\WriteGrave.cshtml.g.cs
+K:\HTA Software\Common Ground\begrafenisplanner-ui\begrafenisplanner\begrafenisplanner\obj\Debug\netcoreapp3.1\Razor\Views\Home\WriteGraveCover.cshtml.g.cs
