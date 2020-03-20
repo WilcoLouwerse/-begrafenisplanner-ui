@@ -1,8 +1,10 @@
 ﻿
+@using System.Data
 @using begrafenisplanner.Models;
 
 @{
     ViewData["Title"] = "Grave";
+    //DataTable dt_graveCovers = ViewBag.GraveCovers; //TODO For selecting a GraveCover from a DropDown with GraveCovers.
 }
 
 <div align="left"><a href="@Url.Action("ReadGrave", "Home")" class="btn btn-primary">Back</a></div>
@@ -14,50 +16,50 @@
     <label>Reference: </label>
     <input type="text"
            id="Reference" name="Reference"
-           value="Reference Here" />
-    <br />
+           value="Reference Here"/>
+    <br/>
 
     <label>Cemetery: </label>
     <input type="text"
            id="Cemetery" name="Cemetery"
-           value="Cemetery Here" />
-    <br />
+           value="Cemetery Here"/>
+    <br/>
 
     <label>Location: </label>
     <input type="text"
            id="Location" name="Location"
-           value="Location Here" />
-    <br />
+           value="Location Here"/>
+    <br/>
 
     <label>Position: </label>
     <input type="text"
            id="Position" name="Position"
-           value="Position Number Here" />
-    <br />
+           value="Position Number Here"/>
+    <br/>
 
     <label>Grave Type: </label>
     <input type="text"
            id="GraveType" name="GraveType"
-           value="Grave Type Here" />
-    <br />
+           value="Grave Type Here"/>
+    <br/>
 
     <label>Status: </label>
     <input type="text"
            id="Status" name="Status"
-           value="Status Here" />
-    <br />
+           value="Status Here"/>
+    <br/>
 
     <label>Acquisition: </label>
     <input type="text"
            id="Acquisition" name="Acquisition"
-           value="Acquisition Here" />
-    <br />
+           value="Acquisition Here"/>
+    <br/>
 
     <label>Description: </label>
     <input type="text"
            id="Description" name="Description"
-           value="Description Here" />
-    <br />
+           value="Description Here"/>
+    <br/>
 
-    <input type="submit" />
+    <input type="submit"/>
 </form>
