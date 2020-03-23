@@ -77,23 +77,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Louwerse\\.nuget\\packages\\": {},
+    "C:\\Users\\Yorick Groeneveld\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "K:\\HTA Software\\Common Ground\\begrafenisplanner-ui\\begrafenisplanner\\begrafenisplanner\\begrafenisplanner.csproj",
+      "projectUniqueName": "C:\\Users\\Yorick Groeneveld\\Documents\\GitHub\\begrafenisplanner-ui\\begrafenisplanner\\begrafenisplanner\\begrafenisplanner.csproj",
       "projectName": "begrafenisplanner",
-      "projectPath": "K:\\HTA Software\\Common Ground\\begrafenisplanner-ui\\begrafenisplanner\\begrafenisplanner\\begrafenisplanner.csproj",
-      "packagesPath": "C:\\Users\\Louwerse\\.nuget\\packages\\",
-      "outputPath": "K:\\HTA Software\\Common Ground\\begrafenisplanner-ui\\begrafenisplanner\\begrafenisplanner\\obj\\",
+      "projectPath": "C:\\Users\\Yorick Groeneveld\\Documents\\GitHub\\begrafenisplanner-ui\\begrafenisplanner\\begrafenisplanner\\begrafenisplanner.csproj",
+      "packagesPath": "C:\\Users\\Yorick Groeneveld\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Yorick Groeneveld\\Documents\\GitHub\\begrafenisplanner-ui\\begrafenisplanner\\begrafenisplanner\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Louwerse\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Yorick Groeneveld\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

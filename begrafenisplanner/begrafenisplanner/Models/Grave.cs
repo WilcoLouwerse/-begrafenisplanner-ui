@@ -9,9 +9,11 @@ namespace begrafenisplanner.Models
         public List<GraveCover> graveCovers { get; set; }
         public string reference { get; set; }
         public string cemetery { get; set; }
+        public string deceased { get; set; }
         public string location { get; set; }
         public int position { get; set; }
         public string graveType { get; set; }
+        
         public string status { get; set; }
         public string acquisition { get; set; }
         public string description { get; set; }

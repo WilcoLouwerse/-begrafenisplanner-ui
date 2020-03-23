@@ -50,6 +50,7 @@ namespace begrafenisplanner.Controllers
             Grave grave = new Grave();
             grave.reference = Request.Form["Reference"];
             grave.cemetery = Request.Form["Cemetery"];
+            grave.deceased = Request.Form["Deceased"];
             grave.location = Request.Form["Location"];
             grave.position = int.Parse(Request.Form["Position"]);
             grave.graveType = Request.Form["GraveType"];
@@ -109,6 +110,7 @@ namespace begrafenisplanner.Controllers
                                                             + "\",\"dateModified\": \"" + grave.dateModified.ToString("yyyy'-'MM'-'dd'T'HH:mm:ss.fff")
                                                             + "\",\"description\": \"" + grave.description
                                                             + "\",\"cemetery\": \"" + grave.cemetery
+                                                            + "\",\"deceased\": \"" + grave.deceased
                                                             + "\",\"acquisition\": \"" + grave.acquisition
                                                             + "\",\"graveReference\": \"" + grave.reference
                                                             + "\",\"graveType\": \"" + grave.graveType
